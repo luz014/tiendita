@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Módulo Vendedor</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Módulo Vendedor</h1>
+
+  <h2>Registrar Venta Física</h2>
+
+  <div class="card">
+    <label>Producto:</label>
+    <select id="productoSelect"></select>
+
+    <label>Cantidad:</label>
+    <input type="number" id="cantidad" min="1" value="1">
+
+    <h3>Tipo de Pago</h3>
+    <label>
+      <input type="radio" name="tipoPagoV" value="completo" checked>
+      Pago Completo
+    </label>
+
+    <label>
+      <input type="radio" name="tipoPagoV" value="fraccionado">
+      Pago Fraccionado
+    </label>
+
+    <br><br>
+    <button onclick="registrarVenta()">Registrar Venta</button>
+  </div>
+
+  <h2>Factura Generada</h2>
+  <div id="factura" class="card"></div>
+
+  <br>
+  <a href="../index.html" class="link">← Volver al menú</a>
+</div>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/vendedor.js"></script>
+</body>
+</html>

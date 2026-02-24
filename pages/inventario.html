@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventario</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Módulo Inventario</h1>
+
+  <h2>Agregar Producto</h2>
+  <div class="card">
+    <input type="text" id="nombre" placeholder="Nombre del producto">
+    <input type="number" id="precio" placeholder="Precio">
+    <input type="number" id="stock" placeholder="Stock">
+    <button onclick="agregarProducto()">Agregar</button>
+  </div>
+
+  <h2>Buscar Producto</h2>
+    <input 
+        type="text" 
+        id="busqueda" 
+        placeholder="Buscar por nombre..." 
+        onkeyup="buscarProducto()"
+        class="input-busqueda"
+    />
+
+  <h2>Lista de Productos</h2>
+  <div id="listaProductos"></div>
+
+  <br>
+  <a href="../index.html" class="link">← Volver al menú</a>
+</div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/inventario.js"></script>
+</body>
+</html>

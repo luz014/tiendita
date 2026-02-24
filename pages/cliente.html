@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Módulo Cliente</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Módulo Cliente</h1>
+
+    <h2>Catálogo</h2>
+    <div id="catalogo" class="grid"></div>
+
+    <h2>Carrito</h2>
+    <div id="carrito" class="card"></div>
+
+    <div class="pago">
+      <h3>Tipo de Pago</h3>
+      <label>
+        <input type="radio" name="tipoPago" value="completo" checked>
+        Pago Completo
+      </label>
+
+      <label>
+        <input type="radio" name="tipoPago" value="fraccionado">
+        Pago Fraccionado
+      </label>
+    </div>
+
+    <button onclick="confirmarCompra()" class="btn">
+      Confirmar Compra
+    </button>
+
+    <br><br>
+    <a href="../index.html" class="link">← Volver al menú</a>
+
+  </div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/cliente.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
